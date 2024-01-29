@@ -137,7 +137,7 @@ nav a {
 }
 
 /* Estilo adicional para el botón "Ver más" */
-#button a button {
+.button {
     background-color: #ff69b4; 
     color: #ffffff;
     padding: 1em 2em;
@@ -146,6 +146,12 @@ nav a {
     cursor: pointer;
     margin-left: 3.5em;
     transition: font-size 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(255, 127.5, 191.26);
+    color: rgb(143.44, 143.44, 143.44);
+    transition: background-color 0.5s linear; 
 }
 
 /*estilo para el pie de pagina*/
@@ -226,6 +232,11 @@ footer {
     color: #010C1A;
 }
 
+#redes_sociales a i:hover {
+    color: rgb(71.719, 84.17, 119.53);
+    transition: color 0.3s linear;
+}
+
 #copy p {
     padding: 0;
     margin: 0;
@@ -243,18 +254,7 @@ footer {
 .footer_box p a {
     text-decoration: none;
 }
-
-.mensaje_btn {
-    background-color: #ff69b4;
-    color: #ffffff;
-    padding: 1em 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: font-size 0.3s ease-in-out;
-}
-
-/* Estilo para el formulario de contacto */
+./* Estilo para el formulario de contacto */
 form {
     width: 100%;
     display: flex;
