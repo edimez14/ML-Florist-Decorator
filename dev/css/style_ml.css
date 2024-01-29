@@ -254,7 +254,8 @@ footer {
 .footer_box p a {
     text-decoration: none;
 }
-./* Estilo para el formulario de contacto */
+
+/* Estilo para el formulario de contacto */
 form {
     width: 100%;
     display: flex;
