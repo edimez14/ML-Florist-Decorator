@@ -144,7 +144,6 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 3.5em;
     transition: font-size 0.3s ease-in-out;
 }
 
@@ -190,6 +189,7 @@ footer {
 
 #contacto_item_2, #contacto_item_3 {
     flex-basis: calc(50% - 0.625em);
+
 }
 
 #mensaje {
@@ -393,10 +393,6 @@ form input {
         margin-top: 6%;
         border-left: none;
         border-top: 1px solid #000;
-    }
-
-    .contacto_whatsapp {
-        font-size: calc(2.5vw - 0.1vh);
     }
 
     .container_modal .modal {
