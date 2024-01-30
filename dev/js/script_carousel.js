@@ -42,3 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+/*funcionamiento de el popup del carousel*/
+document.querySelectorAll('.carousel_items img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup_img').style.display = 'block';
+        document.querySelector('.popup_img img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup_img button').onclick = () =>{
+    document.querySelector('.popup_img').style.display = 'none';
+};
+

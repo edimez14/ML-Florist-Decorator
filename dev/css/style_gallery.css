@@ -5,7 +5,7 @@
 
 #h2_2 {
 	position: absolute;
-	top: 2.5em;
+	top: 1.5em;
 
 }
 
@@ -31,9 +31,10 @@
 .carousel_items {
 	display: flex;
 	scroll-snap-type: x mandatory;
-	gap: 16px; /* Espaciado entre las imágenes */
+	gap: 16px;
 	scroll-behavior: smooth;
   	transition: transform 0.8s ease-in-out;
+  	height: 32em;
 }
 
 .box_img {
@@ -44,9 +45,10 @@
 	max-height: 70%;
 	overflow: hidden;
 	display: block;
+
 }
 
-.box_img a img {
+.box_img img {
 	width: 100%;
 	height: auto;
 	border-radius: 0.5em;
