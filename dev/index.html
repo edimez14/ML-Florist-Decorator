@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style_menu.css">
+        <link rel="icon" href="assets/img/logo.ico">
+        <title>ML Florist Decorator</title>
+    </head>
+    <body>
+        <div id="menu">
+            <header id="header" class="glassmorphism">
+                <div>
+                    <img src="assets/img/logo.png" alt="Logo ML Florist Decorator" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">contacto</a></li>
+                    </ul>
+                </nav> 
+            </header>
+            <script type="text/javascript" src="js/menu.js"></script>
+        </div>
+
+        <section id="inicio" class="content glassmorphism">
+                <div>
+                    <div>
+                        <img src="assets/img/imagen_destacada.png" alt="Foto de la florista decoradora" />
+                    </div>
+                    <div>
+                        <p>Soy diseñadora florista con 15 años de experiencia en la creación de hermosas decoraciones para eventos, tales como bodas, fiestas de cumpleaños y otros.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="content">
+            <div id="galeria">
+                <div class="box">
+                    <img src="assets/img/cupa_decorada.JPG" alt="Imagen 1" />
+                </div>
+                <div class="box">
+                    <img src="assets/img/centro_de_mesa.JPG" alt="Imagen 2" />
+                    </a>
+                </div>
+                <div class="box">
+                    <img src="assets/img/arreglo_de_mesa.JPG" alt="Imagen 3" />
+                </div>
+                <div class="box">
+                    <img src="assets/img/arco_decorado.JPG" alt="Imagen 4" /> 
+                </div>
+                <div class="box">
+                    <img src="assets/img/cupa_decorada_2.jpg" alt="Imagen 5" />
+                </div>
+            </div>
+            <div class="popup_img">
+                <button class="exit_btn" type="submit">X</button>
+                <img src="assets/img/cupa_decorada.JPG" alt="">
+            </div>
+            <a href="index_galeria.html" target="_blank">
+                <button class="button">Ver más</button>
+            </a>
+        </section>
+
+        <footer id="footer" class="glassmorphism">
+            <div id="footer_container">
+                <div class="footer_box">
+                    <div id="contacto_container">
+                        <div id="contacto">
+                            <div id="contacto_item_1">
+                                <p id="mensaje">Si estás interesado, contáctanos a nuestro correo electrónico <b>mlfloristdecorator@gmail.com</b> o a nuestro <span id="whatsapp">Whatsapp</span></p>
+                            </div>
+                            <div id="contacto_item_2">
+                                <a href="https://wa.me/573196257940" target="_blank">
+                                    <button class="button">Contactar por Whatsapp</button>
+                                </a>
+                            </div>
+                            <div id="contacto_item_3" class="container">
+                                <button class="button" type="submit" id="lanzar_modal">Contactar por Email</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_box">
+                    <div id="rs_box">
+                        <p>
+                        Redes sociales:
+                        </p>
+                        <div id="redes_sociales">
+                            <a href="https://twitter.com/MLflorista" target="_blank" title="MLflorista"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.instagram.com/ml.florista" target="_blank" title="ml.florista"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://www.tiktok.com/@mlflorista" target="_blank" title="mlflorista"><i class='bx bxl-tiktok'></i></a>
+                            <a href="https://www.pinterest.com/mlflorista1" target="_blank" title="mlflorista1"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="copy" class="footer_box">
+                    <p>&copy; 2023 ML Florist Decorator. todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+        <div class="container_modal">
+            <div class="modal">
+                <button class="exit_btn" type="submit" id="ocultar_modal">X</button>
+                <h2>Contacto</h2>
+                <form id="formulario_contacto" action="https://formspree.io/f/xqkrzyng" target="_blank" method="post">
+                    <label type="text" for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" class="content_form" required>
+                    <label for="email" class="content_form">Correo electrónico:</label>
+                    <input type="email" class="content_form" id="email" name="email" required>
+                    <label for="comentario" class="content_form">Comentario:</label>
+                    <textarea id="comentario" class="content_form" name="comentario" rows="4" required></textarea>
+                    <button class="mensaje_btn" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
