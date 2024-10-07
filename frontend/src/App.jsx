@@ -4,9 +4,12 @@ function App() {
 
   return (
     <>
-      <Index />
+      <div className="bg-black">
+        <Index />
+        <p>hello world</p>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;
