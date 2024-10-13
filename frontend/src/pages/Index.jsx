@@ -1,8 +1,13 @@
+import { IndexSections } from "../components/IndexSections";
+import { NavBar } from "../components/NavBar";
 export function Index() {
 
-    return (
-      <>
-        <p>hello world</p>
-      </>
-    )
-  }
+  return (
+    <>
+      <div className="h-screen">
+        <NavBar />
+        <IndexSections />
+      </div>
+    </>
+  );
+}
