@@ -33,7 +33,7 @@ DJANGO_APPS = [
 ]
 
 PROJECTS_APPS = [
-
+    "apps.shop",
 ]
 
 THIRD_PARTY_APPS = [
@@ -56,9 +56,10 @@ CKEDITOR_UPLOAD_PATH = "/media/"
 
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -72,7 +73,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        # 'DIRS': [os.path.join(BASE_DIR, '../frontend/dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
